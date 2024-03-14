@@ -63,6 +63,7 @@ document.getElementById("member").addEventListener("change", function() {
     } else {
         total = subtotal;
     }
+
     document.getElementById("total").textContent = `$ ${total.toFixed(2)}`;
 });
 

@@ -56,15 +56,20 @@ document.getElementById("member").addEventListener("change", function() {
     const subtotal = Number(document.getElementById("subtotal").value);
 
     // Apply discount if the checkbox is checked
-    let total;
-    if (isMember) {
-        // Apply 20% discount
-        total = subtotal * 0.8;
-    } else {
-        total = subtotal;
+    //let total;
+    
+     
+    if (isMember===true) {
+        //Apply 20% discount
+      total = subtotal * 0.8;
+        document.querySelector("#total").textContent = `$ ${total}`;
     }
-
-    document.getElementById("total").textContent = `$ ${total.toFixed(2)}`;
+     else if(isMember === false){
+        total = subtotal;
+        document.querySelector("#total").textContent = `$ ${total}`;
+    }
+    
+    
 });
 
 

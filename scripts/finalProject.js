@@ -20,7 +20,7 @@ document.getElementById("searchForm").addEventListener("submit", function(event)
     }
 
     const queryString = query.join("+");
-    const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=subject:${queryString}&key=AIzaSyDYLVGfBNDQx1kTgj1XMWQPbInFkF6Ht94`;
+    const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=subject:Romance&key=AIzaSyDYLVGfBNDQx1kTgj1XMWQPbInFkF6Ht94`;
 
     fetch(apiUrl)
         .then(response => response.json())
